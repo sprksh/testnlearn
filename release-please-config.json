@@ -5,7 +5,7 @@
         "changelog-path": "CHANGELOG.md",
         "extra-files": [
             {
-                "type": "text",
+                "type": "generic",
                 "path": "cmd/root.go",
                 "pattern": "const Version = \"(?<version>.*)\""
             }
