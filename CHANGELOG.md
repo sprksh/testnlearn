@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/sprksh/testnlearn/compare/v0.3.0...v0.3.1) (2025-09-23)
+
+
+### Bug Fixes
+
+* empty fix for 0.3.1 ([5af97fe](https://github.com/sprksh/testnlearn/commit/5af97feae5c30bd82048f9faee8a88e6e8a4a623))
+
 ## [0.3.0](https://github.com/sprksh/testnlearn/compare/v0.2.0...v0.3.0) (2025-09-23)
 
 
