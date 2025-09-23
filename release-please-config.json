@@ -3,11 +3,30 @@
       ".": {
         "release-type": "go",
         "changelog-path": "CHANGELOG.md",
+        "bump-minor-pre-major": true,
+        "changelog-sections": [
+            { "type": "feat", "section": "Features" },
+            { "type": "fix", "section": "Bug Fixes" },
+            { "type": "chore", "section": "Miscellaneous" },
+            { "type": "refactor", "section": "Miscellaneous" },
+            { "type": "test", "section": "Miscellaneous" },
+            { "type": "doc", "section": "Documentation" }
+        ],
+        "pull-request-title-pattern": "chore: release ${version}",
         "extra-files": [
             {
                 "type": "generic",
                 "path": "cmd/root.go",
                 "pattern": "const Version = \"(?<version>.*)\""
+            }
+        ],
+        "branches": [
+            {
+            "branch": "main",
+            "prerelease": true
+            },
+            {
+            "branch": "release/([0-9]+)\\.([0-9]+)\\.x"
             }
         ]
       }
