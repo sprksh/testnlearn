@@ -8,6 +8,9 @@ on:
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    permissions: # Add this block
+      contents: write
+      pull-requests: write
     steps:
       # Use the official release-please-action
       - uses: googleapis/release-please-action@v4
