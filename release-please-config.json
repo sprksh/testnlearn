@@ -1,0 +1,15 @@
+{
+    "packages": {
+      ".": {
+        "release-type": "go",
+        "changelog-path": "CHANGELOG.md",
+        "extra-files": [
+            {
+                "type": "text",
+                "path": "cmd/root.go",
+                "pattern": "const Version = \"(?<version>.*)\""
+            }
+        ]
+      }
+    }   
+  }

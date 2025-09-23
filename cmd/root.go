@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
+const Version = "0.1.0" // x-release-please-version
+
 var (
-	// Version is set during build
-	Version = "0.0.1"
 	// logger is the global logger instance
 	logger *logrus.Logger
 )

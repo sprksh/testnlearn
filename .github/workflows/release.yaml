@@ -1,0 +1,21 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - "release/*"
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      # Use the official release-please-action
+      - uses: googleapis/release-please-action@v4
+        with:
+          # This token is provided by Actions, no setup is needed.
+          # It's used to create the Release PR.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          # These two lines are essential for Go projects
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
