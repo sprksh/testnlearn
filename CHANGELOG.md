@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.0](https://github.com/sprksh/testnlearn/compare/v0.2.0...v0.3.0) (2025-09-23)
+
+
+### Features
+
+* feat 2 pushed post release ([e995c17](https://github.com/sprksh/testnlearn/commit/e995c17fe3acfe9d46f54ee8f6dc19f47873a3bb))
+* release-please setup for release branch added ([7c68cc1](https://github.com/sprksh/testnlearn/commit/7c68cc1bedb8d991bccc3613aeb666d515e73437))
+* release-please setup for target branch added 2 ([4d3c17d](https://github.com/sprksh/testnlearn/commit/4d3c17dc0c48cd06292ff51dab24890c8afbf90f))
+* release-please setup for target branch added 3 ([09746c9](https://github.com/sprksh/testnlearn/commit/09746c9619b66bbd0d5c0739f891e21b5954237b))
+
 ## [0.2.0](https://github.com/sprksh/testnlearn/compare/v0.1.0...v0.2.0) (2025-09-23)
 
 
