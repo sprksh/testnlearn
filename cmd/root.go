@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-const Version = "0.12.1" // x-release-please-version
+const Version = "0.13.0" // x-release-please-version
 
 var (
 	// logger is the global logger instance
