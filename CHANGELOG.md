@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.10.0](https://github.com/sprksh/testnlearn/compare/v0.9.0...v0.10.0) (2025-09-24)
+
+
+### Features
+
+* feat 23, fixing sync release condition, removed label ([16ab5cc](https://github.com/sprksh/testnlearn/commit/16ab5cc3c1f4990bde8627086bf4c67243e63531))
+
+
+### Miscellaneous
+
+* release 0.9.0 ([#27](https://github.com/sprksh/testnlearn/issues/27)) ([c89bd41](https://github.com/sprksh/testnlearn/commit/c89bd41365180a2263150e613c8dd8c226f76644))
+
 ## [0.9.0](https://github.com/sprksh/testnlearn/compare/v0.8.0...v0.9.0) (2025-09-24)
 
 
