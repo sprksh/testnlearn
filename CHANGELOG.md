@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.14.0](https://github.com/sprksh/testnlearn/compare/v0.13.0...v0.14.0) (2025-09-24)
+
+
+### Features
+
+* feat 45 logging in action ([bf2e6b2](https://github.com/sprksh/testnlearn/commit/bf2e6b214a5778b789f4bff35b0b8dfa0b2f61d7))
+* feat 45 post release 0.13.x syncback ([457a5ca](https://github.com/sprksh/testnlearn/commit/457a5ca4264bde6275cbbc4a7595c66b9619f025))
+* feat 46 post release cut for 0.14.x ([46d2ec1](https://github.com/sprksh/testnlearn/commit/46d2ec1d932713b3611459a2e7c04520928cf8e3))
+
+
+### Miscellaneous
+
+* sync release v0.13.0 to main branch ([079b5d1](https://github.com/sprksh/testnlearn/commit/079b5d11dcf9bbea17f4ca42b547280b1e4091bd))
+
 ## [0.13.0](https://github.com/sprksh/testnlearn/compare/v0.12.1...v0.13.0) (2025-09-24)
 
 
