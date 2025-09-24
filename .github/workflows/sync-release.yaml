@@ -42,8 +42,8 @@ jobs:
       
       - name: create pull request for major or minor release
         run: |
-          COMMIT_OVERRIDE1=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only ${PR_BRANCH}...origin/main | grep -v "commit" | grep -v "chore: sync #" || echo "fail1")
-          COMMIT_OVERRIDE2=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only origin/main...${PR_BRANCH} | grep -v "commit" | grep -v "chore: release" || echo "fail2")
+          COMMIT_OVERRIDE1=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only ${PR_BRANCH}...origin/main | grep -v "commit" | grep -v "chore: sync #" || echo "")
+          COMMIT_OVERRIDE2=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only origin/main...${PR_BRANCH} | grep -v "commit" | grep -v "chore: release" || echo "")
           
           echo "# Description" >> body
           echo "" >> body
