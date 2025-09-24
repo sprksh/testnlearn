@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/sprksh/testnlearn/compare/v0.7.0...v0.7.1) (2025-09-24)
+
+
+### Miscellaneous
+
+* release 0.7.0 ([#21](https://github.com/sprksh/testnlearn/issues/21)) ([88d91d9](https://github.com/sprksh/testnlearn/commit/88d91d95eeafb8b70f9588ae6dc318ca4d270a2c))
+
 ## [0.7.0](https://github.com/sprksh/testnlearn/compare/v0.6.1...v0.7.0) (2025-09-24)
 
 
