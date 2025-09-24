@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.16.0](https://github.com/sprksh/testnlearn/compare/v0.15.1...v0.16.0) (2025-09-24)
+
+
+### Features
+
+* feat 50 post release cut of 0.15.x --man ([9859ccf](https://github.com/sprksh/testnlearn/commit/9859ccf86d085e450533064b7226648001e37be8))
+* feat 51 post release cut of 0.15.x --man ([9859ccf](https://github.com/sprksh/testnlearn/commit/9859ccf86d085e450533064b7226648001e37be8))
+* feat 52 post release 0.15.0 --man ([9859ccf](https://github.com/sprksh/testnlearn/commit/9859ccf86d085e450533064b7226648001e37be8))
+* feat 53 post release 0.15.1 syncback ([77e1919](https://github.com/sprksh/testnlearn/commit/77e1919e3920c74b25f00c71da30d913c914a3f1))
+* feat 54 post release 0.15.1 syncback ([f4a9527](https://github.com/sprksh/testnlearn/commit/f4a95276b35ef26d9d5216c4b8cb360363889a82))
+
 ## [0.15.1](https://github.com/sprksh/testnlearn/compare/v0.15.0...v0.15.1) (2025-09-24)
 
 
