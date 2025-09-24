@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.0](https://github.com/sprksh/testnlearn/compare/v0.7.1...v0.8.0) (2025-09-24)
+
+
+### Features
+
+* feat 22, added syncback after faulty 0.7.1 release ([ca8f551](https://github.com/sprksh/testnlearn/commit/ca8f551ce15c56d719857a761282bf778a85a061))
+
+
+### Miscellaneous
+
+* release 0.7.1 ([#23](https://github.com/sprksh/testnlearn/issues/23)) ([82b8205](https://github.com/sprksh/testnlearn/commit/82b8205459f8c8a8194e9181a65ed5f028e5b37c))
+
 ## [0.7.1](https://github.com/sprksh/testnlearn/compare/v0.7.0...v0.7.1) (2025-09-24)
 
 
