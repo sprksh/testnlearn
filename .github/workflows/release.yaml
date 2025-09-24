@@ -8,7 +8,7 @@ on:
 jobs:
   release-please:
     runs-on: ubuntu-latest
-    permissions: # Add this block
+    permissions:
       contents: write
       pull-requests: write
     steps:
@@ -20,6 +20,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           target-branch: ${{ github.ref_name }}
 
-          # These two lines are essential for Go projects
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
