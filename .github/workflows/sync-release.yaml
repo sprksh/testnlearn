@@ -62,8 +62,7 @@ jobs:
           --body "$(cat body)" \
           --base main \
           --head $PR_BRANCH \
-          --assignee '${{ github.event.pull_request.merged_by.login }}' \
-          --label 'Enable Test'
+          --assignee '${{ github.event.pull_request.merged_by.login }}'
       
       - name: create pull request for patch release
         if: ${{ ! endsWith(env.RELEASE_TAG, '.0') }}
@@ -85,5 +84,4 @@ jobs:
           --body "$(cat body)" \
           --base main \
           --head $PR_BRANCH \
-          --assignee '${{ github.event.pull_request.merged_by.login }}' \
-          --label 'Enable Test'
+          --assignee '${{ github.event.pull_request.merged_by.login }}'
