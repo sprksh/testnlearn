@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.22.0](https://github.com/sprksh/testnlearn/compare/v0.21.3...v0.22.0) (2025-09-25)
+
+
+### Features
+
+* 78 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+* 79 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+* 80 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+* 81 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+* 82 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+* 83 between release and syncback pr creation ([4528be7](https://github.com/sprksh/testnlearn/commit/4528be74ecfa70d4c784c61c26f39e869ea843de))
+* 83 between release and syncback pr creation 2 ([986ec32](https://github.com/sprksh/testnlearn/commit/986ec32025c6812f5bd4f5392ae4958baa737c6a))
+* 84 ([2ae3a67](https://github.com/sprksh/testnlearn/commit/2ae3a671093b19035815ed9147f89aaf10f746db))
+
+
+### Bug Fixes
+
+* 4 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+* 7 ([93f3dbf](https://github.com/sprksh/testnlearn/commit/93f3dbf51a32bee78096b8d48bdb8099312cfcfe))
+
 ## [0.21.3](https://github.com/sprksh/testnlearn/compare/v0.21.2...v0.21.3) (2025-09-25)
 
 
