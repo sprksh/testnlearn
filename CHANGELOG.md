@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.22.0-alpha.10](https://github.com/sprksh/testnlearn/compare/v0.22.0...v0.22.0-alpha.10) (2025-09-25)
+
+
+### Features
+
+* 85, added pre-release setup ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+
+
+### Bug Fixes
+
+* 8, release as try 1 ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+* 9, release as try 3 ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+* 9, release as try 4 ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+* 9, release as try 5 ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+* 9, release as try 6 ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+* 9, release as try 7 ([8439903](https://github.com/sprksh/testnlearn/commit/84399032ebcc4d2fc0866d104f27b88686f0a1a8))
+* 9, release as try 7 ([804940f](https://github.com/sprksh/testnlearn/commit/804940f0cec289723a33d05b900ecbdd6a3a80eb))
+
 ## [0.22.0](https://github.com/sprksh/testnlearn/compare/v0.21.3...v0.22.0) (2025-09-25)
 
 
