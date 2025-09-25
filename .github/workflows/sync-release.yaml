@@ -42,8 +42,8 @@ jobs:
       
       - name: create pull request for releases
         run: |
-          COMMIT_OVERRIDE1=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only ${PR_BRANCH}...origin/main | grep -v "commit" | grep -v "chore: sync #" || echo "")
-          COMMIT_OVERRIDE2=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only origin/main...${PR_BRANCH} | grep -v "commit" | grep -v "chore: release" || echo "")
+          COMMITS_ON_MAIN_BUT_NOT_ON_RELEASE=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only ${PR_BRANCH}...origin/main | grep -v "commit" | grep -v "chore: sync release" || echo "")
+          COMMITS_ON_RELEASE_BUT_NOT_ON_MAIN=$(git rev-list --reverse --pretty="%s" --cherry-pick --right-only origin/main...${PR_BRANCH} | grep -v "commit" | grep -v "chore: release" || echo "")
           
           echo "# Description" >> body
           echo "" >> body
@@ -54,8 +54,12 @@ jobs:
           echo "**↓↓ Please review and edit commit overrides before merging ↓↓**" >> body
           echo "" >> body
           echo "BEGIN_COMMIT_OVERRIDE" >> body
-          echo "${COMMIT_OVERRIDE1}" >> body
-          echo "${COMMIT_OVERRIDE2}" >> body
+          if [ -n "${COMMITS_ON_MAIN_BUT_NOT_ON_RELEASE}" ]; then
+            echo "${COMMITS_ON_MAIN_BUT_NOT_ON_RELEASE}" >> body
+          fi
+          if [ -n "${COMMITS_ON_RELEASE_BUT_NOT_ON_MAIN}" ]; then
+            echo "${COMMITS_ON_RELEASE_BUT_NOT_ON_MAIN}" >> body
+          fi
           echo "END_COMMIT_OVERRIDE" >> body
           
           gh pr create \
