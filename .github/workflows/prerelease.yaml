@@ -12,47 +12,6 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Extract version from branch name
-        id: extract-version
-        run: |
-          BRANCH_NAME="${{ github.ref_name }}"
-          VERSION="${BRANCH_NAME#prerelease/}"
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-      
-      - name: Generate dynamic config
-        run: |
-          cat > /tmp/dynamic-prerelease-config.json << EOF
-          {
-            "packages": {
-              ".": {
-                "release-type": "go",
-                "prerelease": true,
-                "release-as": "${{ steps.extract-version.outputs.version }}",
-                "changelog-path": "CHANGELOG.md",
-                "bump-minor-pre-major": true,
-                "changelog-sections": [
-                  { "type": "feat", "section": "Features" },
-                  { "type": "fix", "section": "Bug Fixes" },
-                  { "type": "chore", "section": "Miscellaneous" },
-                  { "type": "refactor", "section": "Miscellaneous" },
-                  { "type": "test", "section": "Miscellaneous" },
-                  { "type": "doc", "section": "Documentation" }
-                ],
-                "pull-request-title-pattern": "chore: release \${version}",
-                "extra-files": [
-                  {
-                    "type": "generic",
-                    "path": "cmd/root.go",
-                    "pattern": "const Version = \"(?<version>.*)\""
-                  }
-                ]
-              }
-            }
-          }
-          EOF
-      # Use the official release-please-action
       - uses: googleapis/release-please-action@v4
         with:
           # This token is provided by Actions, no setup is needed.
@@ -60,5 +19,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           target-branch: ${{ github.ref_name }}
 
-          config-file: /tmp/dynamic-prerelease-config.json
+          config-file: prerelease-please-config.json
           manifest-file: .release-please-manifest.json
