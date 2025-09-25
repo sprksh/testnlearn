@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.1](https://github.com/sprksh/testnlearn/compare/v0.20.0...v0.20.1) (2025-09-25)
+
+
+### Bug Fixes
+
+* 3 ([1573c87](https://github.com/sprksh/testnlearn/commit/1573c8718ab8f698cdbb79ee1edeffb1d37407c5))
+
 ## [0.20.0](https://github.com/sprksh/testnlearn/compare/v0.19.0...v0.20.0) (2025-09-25)
 
 
