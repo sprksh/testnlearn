@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.20.0](https://github.com/sprksh/testnlearn/compare/v0.19.0...v0.20.0) (2025-09-25)
+
+
+### Features
+
+* 72 ([b038b85](https://github.com/sprksh/testnlearn/commit/b038b85cb40932299f577963f8cea23733e3e74b))
+* 73 ([b2abe88](https://github.com/sprksh/testnlearn/commit/b2abe8876a868314674dc826dc55adcfa171b115))
+
+
+### Bug Fixes
+
+* 1 ([e192f75](https://github.com/sprksh/testnlearn/commit/e192f75fe615b0a58c5daaab22256ebaae734ba5))
+
 ## [0.19.0](https://github.com/sprksh/testnlearn/compare/v0.18.1...v0.19.0) (2025-09-24)
 
 
