@@ -3,7 +3,7 @@
     ".": {
       "release-type": "go",
       "prerelease": true,
-      "release-as": "<set version here after cutting the prerelease branch>",
+      "release-as": "0.22.0-alpha.16",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": true,
       "changelog-sections": [
