@@ -22,8 +22,9 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
       
       - name: Generate dynamic config
+        working-directory: ${{ github.workspace }}
         run: |
-          cat > /tmp/dynamic-prerelease-config.json << EOF
+          cat > dynamic-prerelease-config.json << EOF
           {
             "packages": {
               ".": {
@@ -52,6 +53,15 @@ jobs:
             }
           }
           EOF
+
+      - name: Debug - Verify config file
+        run: |
+          pwd
+          ls -la
+          echo "--- Config file content ---"
+          cat dynamic-prerelease-config.json
+          echo "--- End config ---"
+
       # Use the official release-please-action
       - uses: googleapis/release-please-action@v4
         with:
@@ -60,5 +70,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           target-branch: ${{ github.ref_name }}
 
-          config-file: /tmp/dynamic-prerelease-config.json
+          config-file: ${{ github.workspace }}/dynamic-prerelease-config.json
           manifest-file: .release-please-manifest.json
