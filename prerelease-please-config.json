@@ -1,26 +1,28 @@
 {
-    "packages": {
-      ".": {
-        "release-type": "go",
-        "prerelease": true,
-        "prerelease-type": "alpha",
-        "changelog-path": "CHANGELOG.md",
-        "changelog-sections": [
-            { "type": "feat", "section": "Features" },
-            { "type": "fix", "section": "Bug Fixes" },
-            { "type": "chore", "section": "Miscellaneous" },
-            { "type": "refactor", "section": "Miscellaneous" },
-            { "type": "test", "section": "Miscellaneous" },
-            { "type": "doc", "section": "Documentation" }
-        ],
-        "pull-request-title-pattern": "chore: prerelease ${version}",
-        "extra-files": [
-            {
-                "type": "generic",
-                "path": "cmd/root.go",
-                "pattern": "const Version = \"(?<version>.*)\""
-            }
-        ]
-      }
-    }   
-  }
+  "packages": {
+    ".": {
+      "release-type": "go",
+      "prerelease": true,
+      "prerelease-type": "alpha",
+      "changelog-path": "CHANGELOG.md",
+      "release-as": "${branch}",
+      "bump-minor-pre-major": true,
+      "changelog-sections": [
+          { "type": "feat", "section": "Features" },
+          { "type": "fix", "section": "Bug Fixes" },
+          { "type": "chore", "section": "Miscellaneous" },
+          { "type": "refactor", "section": "Miscellaneous" },
+          { "type": "test", "section": "Miscellaneous" },
+          { "type": "doc", "section": "Documentation" }
+      ],
+      "pull-request-title-pattern": "chore: prerelease ${version}",
+      "extra-files": [
+          {
+              "type": "generic",
+              "path": "cmd/root.go",
+              "pattern": "const Version = \"(?<version>.*)\""
+          }
+      ]
+    }
+  }   
+}
