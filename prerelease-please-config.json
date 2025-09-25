@@ -3,7 +3,6 @@
     ".": {
       "release-type": "go",
       "prerelease": true,
-      "prerelease-type": "alpha",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": true,
       "changelog-sections": [
