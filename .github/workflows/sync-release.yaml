@@ -54,10 +54,8 @@ jobs:
           echo "**↓↓ Please review and edit commit overrides before merging ↓↓**" >> body
           echo "" >> body
           echo "BEGIN_COMMIT_OVERRIDE" >> body
-          if [ -n "${COMMITS_ON_MAIN_BUT_NOT_ON_RELEASE}" ]; then
-            echo "${COMMITS_ON_MAIN_BUT_NOT_ON_RELEASE}" >> body
-          fi
-          if [ -n "${COMMITS_ON_RELEASE_BUT_NOT_ON_MAIN}" ]; then
+          echo "${COMMITS_ON_MAIN_BUT_NOT_ON_RELEASE}" >> body
+          if [[ ! "${RELEASE_TAG}" =~ \.0$ ]]; then
             echo "${COMMITS_ON_RELEASE_BUT_NOT_ON_MAIN}" >> body
           fi
           echo "END_COMMIT_OVERRIDE" >> body
